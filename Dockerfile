@@ -48,7 +48,7 @@ RUN yum clean all
 RUN service postgresql initdb
 
 # get and install Tactic
-RUN git clone -b 4.5 --depth 1 https://github.com/Southpaw-TACTIC/TACTIC.git && \
+RUN git clone --depth 1 https://github.com/Southpaw-TACTIC/TACTIC.git && \
     cp TACTIC/src/install/postgresql/pg_hba.conf /var/lib/pgsql/data/pg_hba.conf && \
     chown postgres:postgres /var/lib/pgsql/data/pg_hba.conf && \
     service postgresql start && \

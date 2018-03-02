@@ -4,9 +4,9 @@
 ############################################################
 
 FROM centos:centos6
-MAINTAINER Diego Cortassa <diego@cortassa.net>
+MAINTAINER Anup <anuprajg@gmail.com>
 
-ENV REFRESHED_AT 2016-10-23
+ENV REFRESHED_AT 2018-03-02
 
 # Reinstall glibc-common to get deleted files (i.e. locales, encoding UTF8) from the centos docker image
 #RUN yum -y reinstall glibc-common
